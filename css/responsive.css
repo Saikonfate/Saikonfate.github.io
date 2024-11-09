@@ -1,0 +1,45 @@
+/* 2xl */
+@media (max-width: 1536px) {
+    
+}
+
+/* xl */
+@media (max-width: 1280px) {
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+   
+    
+}
+
+/* md */
+@media (max-width: 768px) {
+        .header__menu {
+            flex-direction: column;
+        }
+    
+        .intro__banner {
+            padding: 20px 10px;
+        }
+    
+        .about__grid,
+        .gallery__grid,
+        .services__list,
+        .news__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+   
+
+/* sm */
+@media (max-width: 640px) {
+    
+}
+
+/* xs */
+@media (max-width: 475px) {
+    
+}

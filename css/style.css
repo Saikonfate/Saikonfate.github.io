@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "ZeldaFont";
+    src: url(../text-font/Triforce.ttf);
+}
+
+* {
+    position: relative;
+    z-index: 1;
+}
+
+body {
+    font-family: "ZeldaFont", sans-serif;
+    color: #ad9c63;
+    background-image: url("../images/Zelda Background 1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 80%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+a {
+    color: #f1c232;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffe066;
+}
+
+/* Section Titles */
+.section__title, .header__title {
+    color: #ffbf00;
+}
+
+/* Button Colors */
+.intro__button, .btn-more, .form__button {
+    background-color: #3a5d29;
+    color: #fff;
+}
+
+.intro__button:hover, .btn-more:hover, .form__button:hover {
+    background-color: #4b722f;
+}
+
+/* Header */
+.header {
+    background-color: #4aba91;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.header__title::before {
+    content: "▲";
+    color: #f1c232;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+
+.header__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #494b4b;
+    font-weight: 600;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu__link {
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.menu__link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Sections */
+.section {
+    border-radius: 10px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section__title::before {
+    content: "⯈ ";
+    color: #4aba91;
+    margin-right: 5px;
+}
+
+.section__title::after {
+    content: " ⯇";
+    color: #4aba91;
+    margin-left: 5px;
+}
+
+.section__text {
+    background-color: #0E7A0D;
+    border-radius: 5px;
+    border: 1px solid #ffbf00;
+    width: 55%;
+    font-size: large;
+    margin-left: 23%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0,0.8);
+}
+
+/* Intro Section */
+.section--intro {
+    font-size: larger;
+    text-align: center;
+}
+
+.intro__banner {
+    padding: 20px;
+}
+
+.intro__title {
+    color: #69cfaa;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.intro__text {
+    color: #69cfaa;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.intro__button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.intro__button:hover {
+    background-color: #555;
+}
+
+/* About Section */
+.about__grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about__item {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #0E7A0D;
+    border: 1px solid #ffbf00;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
+}
+
+/* Gallery Section */
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery__item {
+    background-color: #2E3A8C;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.gallery__img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gallery__caption {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.btn-more {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    font-family: "ZeldaFont", sans-serif; 
+}
+
+.btn-more:hover {
+    background-color: #555;
+}
+
+/* Services Section */
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service__item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* News Section */
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news__item {
+    display: flex;
+    flex-direction: column;
+    border: 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #2E3A8C;
+}
+
+.news__img {
+    width: 100%;
+    height: auto;
+}
+
+.news__content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.news__title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.news__date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news__summary {
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact__form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form__button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form__button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #4aba91;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__text {
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social__link {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social__link:hover {
+    color: #ddd;
+}
+
