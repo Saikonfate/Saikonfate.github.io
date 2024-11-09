@@ -242,9 +242,9 @@ a:hover {
 }
 
 .service__item {
-    background-color: #f9f9f9;
+    background-color: #2E3A8C;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffbf00;
     border-radius: 5px;
     text-align: center;
 }
