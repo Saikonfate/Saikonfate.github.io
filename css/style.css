@@ -242,9 +242,9 @@ a:hover {
 }
 
 .service__item {
-    background-color: #2E3A8C;
+    background-color: #f9f9f9;
     padding: 20px;
-    border: 1px solid #ffbf00;
+    border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
 }
@@ -360,3 +360,21 @@ a:hover {
     color: #ddd;
 }
 
+/* Media Queries*/
+
+@media (max-width: 768px) {
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .intro__banner {
+        padding: 20px 10px;
+    }
+
+    .about__grid,
+    .gallery__grid,
+    .services__list,
+    .news__grid {
+        grid-template-columns: 1fr;
+    }
+}
