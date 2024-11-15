@@ -72,7 +72,7 @@ a:hover {
 
 .header__title {
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin: 15px auto;
     font-weight: 600;
 }
 
@@ -80,7 +80,7 @@ a:hover {
     content: "▲";
     color: #e8d078;
     font-size: 1.5rem;
-    margin: 15px auto;
+    margin-bottom: 15px;
 }
 
 .header__subtitle {
