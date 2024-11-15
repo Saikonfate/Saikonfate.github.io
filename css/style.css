@@ -137,7 +137,7 @@ a:hover {
 .section__text {
     background-color: #365c24; 
     border-radius: 5px;
-    border: 1px solid #d4b90e;
+    border: 1px solid #0f199b;
     width: 50%;
     font-size: large;
     text-align: center;
@@ -194,7 +194,7 @@ a:hover {
     min-width: 200px;
     padding: 20px;
     background-color: #365c24;
-    border: 1px solid #d4b90e;
+    border: 1px solid #0f199b;
     border-radius: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.8);
@@ -252,7 +252,7 @@ a:hover {
 .service__item {
     background-color: #2a3d24;
     padding: 20px;
-    border: 1px solid #d4b90e;
+    border: 1px solid #0f199b;
     border-radius: 5px;
     text-align: center;
 }
