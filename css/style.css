@@ -379,6 +379,11 @@ a:hover {
         padding: 20px 10px;
     }
 
+    .section__text{
+        margin: 20px auto;
+        width: 50%;
+    }
+
     .about__grid,
     .gallery__grid,
     .services__list,
