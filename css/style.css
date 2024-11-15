@@ -175,6 +175,8 @@ a:hover {
     color: #fff;
     border-radius: 5px;
     margin: 5px;
+    width: 150px;
+    text-align: center;
     transition: background-color 0.3s;
 }
 
